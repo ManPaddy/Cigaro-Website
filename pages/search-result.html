@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flavorfusion</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../media/favicon.svg" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Box Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="search-body">
+    <section class="result-wrapper">
+        <div class="row">
+            <img src="" alt="" id="image">
+            <div class="heading">
+                <h2 class="title"></h2>
+                <div class="meta">
+                    <p class="time">
+                        <i class='bx bx-time-five' ></i>
+                        <span id="time"></span>
+                    </p>
+                    <p class="time">
+                        <i class='bx bx-dish'></i>
+                        <span id="servings"></span> 
+                    </p>
+                    <p class="time">
+                        <i class='bx bx-badge-check' ></i>
+                        <span id="health"></span>
+                    </p>
+                </div>
+                <div class="dish-type"></div>
+                <div class="ingredients">
+                    <h5>Ingredients:</h5>
+                    <div id="ingredients"></div>
+                </div>
+            </div>
+        </div>
+        <div class="instructions">
+            <h5>Instructions:</h5>
+            <ol id="instructions"></ol>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+<!--FOOTER-->
+<footer>
+    <section>
+        <div class="row">
+            <div class="col">
+                <img src="../media/CIGARO.png" class="logos">
+                <p>Live Cigaro, Live fresh</p>
+            </div>
+            <div class="col">
+                <h3>Office</h3>
+                <p>Block A-1</p>
+                <p>No 133 HFP Shopping Complex</p>
+                <p>Abraham Adesanya, Ajah, Lagos</p>
+                <p class="email-id">info@cigarogroup.com</p>
+                <h4>+2349168614668</h4>
+                <h4></h4>
+
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html" class="btnn">Home</a></li>
+                    <li><a href="pages/about.html" class="btnn">About</a></li>
+                    <li><a href="pages/contacts.html" class="btnn">Contacts</a></li>
+                    <li><a href="pages/blog.html" class="btnn">Blog</a></li>
+                    <li><a href="pages/appointment.html" class="btnn">Book an Appointment</a></li>
+                </ul>
+
+            </div>
+            <div></div>
+        </div>
+
+        <div class="container">
+            <small>All Rights Reserved. Copyright Cigaro Realty Limited</small>
+            <small id="year"></small>
+        </div>
+    </footer>
+</section>
+</html>

@@ -21,7 +21,7 @@ a {
 .container {
   width: 85%;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 0 auto;
   border: 1px solid none;
 }
 
@@ -38,7 +38,7 @@ a {
   z-index: 1000;
 }
 .header .container {
-  padding-block:  10px;
+  padding-block:  1em;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -50,7 +50,7 @@ a {
 }
 .logo span {
   color: #0864afe4;
-  font-size: 2rem
+  font-size: 2rem;
 }
 
 .profile-picture {
@@ -106,6 +106,7 @@ a {
   width: 85%;
 }
 
+
 /* Home Page*/
 /* Hero Section*/
 .hero {
@@ -145,6 +146,11 @@ a {
   cursor: pointer;
   font-weight: 600;
   padding: 1em 1.5em;
+}
+
+.container .image {
+  max-width: 500px;
+  border-radius: 10px;
 }
 
 /* Popular Recipes*/
@@ -475,11 +481,30 @@ hr {
 .copyright {
   text-align: center;
 }
+
 @media (max-width: 700px) {
-  .logo {
+  .logos {
     max-width: fit-content;
   }
-  
+  .hero .image {
+    max-width: 10px;
+  }
+  html {
+    font-size: 55%;
+  }
+  .header {
+    font-weight: 55% ;
+    padding: none 2rem;
+  }
+  .container {
+    margin: 50px auto;
+  }
+  .container .image {
+    max-width: 200px;
+  }
+  .hero .content {
+    padding-top: 50px;
+  }
   footer {
     bottom: unset;
   }
@@ -487,6 +512,20 @@ hr {
     flex-basis: 100%;
   }
   
+  .logo {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .nav-toggler {
+    display: none;
+  }
+  .navbar {
+    display: inline-block;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /* About Page*/
@@ -817,12 +856,14 @@ hr {
     display: none;
   }
   .navbar {
-    display: block;
+    display: flex;
   }
   .nav-list {
     flex-direction: row;
     gap: 2em;
   }
+}
+
   /* Home Page*/
   /* Hero Section*/
   .hero .container {
@@ -946,7 +987,6 @@ hr {
   .ingredients p {
     font-size: 1.125rem;
   }
-}
 /* Laptops and Bigger Screen Devices*/
 @media (min-width: 800px) {
   /* Home Page */

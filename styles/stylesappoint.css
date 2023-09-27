@@ -18,7 +18,7 @@ body {
 
 .form {
   width: 700px;
-  height: 550px;
+  height: 700px;
   background-color: rgb(0, 0, 0,.5);
   margin-bottom: 20px; 
   border-radius: 20px;
@@ -115,5 +115,8 @@ body {
 @media screen and (max-width:710px) {
   .main-form {
     text-align: center;
+  }
+  .form {
+    height: auto;
   }
 }
